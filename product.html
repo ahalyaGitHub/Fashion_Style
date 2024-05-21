@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <style>
+   <style>
          @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
         *{
             margin: 0;
@@ -18,6 +18,7 @@
         }
         nav {
             background-color: none;
+            width: 100%;
         }
 
         nav ul {
@@ -30,7 +31,7 @@
 
         nav a {
             color: black;
-            font-size: 100%;
+            font-size: 130%;
             font-weight: bold;
             text-decoration: none;
         }
@@ -43,7 +44,7 @@
             border: 1px solid black;
             color: white;
             background-color: black;
-            margin-right: 40%;
+            margin-right: 50%;
             font-weight: bold;
             padding: 1% 2%;
             margin-left: 15%;
@@ -60,14 +61,20 @@
         .dress_div {
             display: flex;
             flex-direction: row;
+            gap: 3%;
             width: 100%;
-            
+            margin-left: 5%;
+            margin-top: 1%;
         }
-        .dress1_div,.dress2_div {
+        .dress1_div,.dress2_div,.dress3_div,.dress4_div {
             display: flex;
             flex-direction: column;
             border: 2px solid white;
             width: 20%;
+            height: 60vh;
+        }
+        img {
+            width: 100%;
             height: 50vh;
         }
         .featuredProduct_div span,nav li span  {
@@ -84,7 +91,6 @@
             <ul>
                 <p>FASHION STYLE</p>
                 <li><a href="">HOME</a></li>
-                <li><a href="">PRODUCT</a></li>
             </ul>
         </nav>
  
@@ -93,25 +99,25 @@
     </div>
     <div class="dress_div">
         <div class="dress1_div">
-            <img src="img/tshirt.webp" alt="" width="100%">
+            <img src="img/tshirt.webp" alt="">
             <div>
 
             </div>
         </div>
         <div class="dress2_div">
-            <img src="img/tshirt.webp" alt="" width="100%">
+            <img src="img/pant.jpg" alt="" >
             <div>
 
             </div>
         </div>
         <div class="dress3_div">
-            <img src="img/tshirt.webp" alt="" width="100%">
+            <img src="img/shirt.webp" alt="">
             <div>
 
             </div>
         </div>
         <div class="dress4_div">
-            <img src="img/tshirt.webp" alt="" width="100%">
+            <img src="img/top.jpg" alt="">
             <div>
 
             </div>

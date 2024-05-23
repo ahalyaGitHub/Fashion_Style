@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url('img/login_img.jpg');
+            background-size: cover;
+            font-family: "Raleway", sans-serif;
+        }
+
+        nav {
+            background-color: none;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            gap: 4%;
+            padding: 1% 1%;
+        }
+
+        nav a {
+            background-color: white;
+            color: rgb(6, 117, 117);
+            padding: 1% 8%;
+            font-size: 130%;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        nav li {
+            margin-top: 2%;
+        }
+
+        nav p {
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            margin-right: 50%;
+            font-weight: bold;
+            padding: 1% 2%;
+            margin-left: 15%;
+            margin-top: 1%;
+        }
+
+        .loginForm {
+            border: 1px solid black;
+            width: 50%;
+            height: 100vh;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <p>FASHION STYLE</p>
+            <li><a href="">HOME</a></li>
+        </ul>
+    </nav>
+    <form class="loginForm">
+
+        <label for="Email Address">Email Address</label><br>
+        <input type="email" name="Email" id="email" placeholder="Email Address"><br>
+        <label for="Password">Password</label><br>
+        <input type="password" name="Password" id="password" placeholder="Password"><br>
+        <input type="submit" value="LOGIN" class="btn">
+
+    </form>
+</body>
+
+</html>

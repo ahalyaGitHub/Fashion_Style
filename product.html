@@ -30,12 +30,18 @@
         }
 
         nav a {
-            color: black;
+            background-color: white;
+            color: rgb(6, 117, 117);
+            padding: 1% 8%;
             font-size: 130%;
             font-weight: bold;
             text-decoration: none;
+            transition: 0.5s;
         }
-
+        nav a:hover {
+            background-color: black;
+            color: white;
+        }
         nav li {
             margin-top: 2%;
         }
@@ -69,7 +75,6 @@
         .dress1_div,.dress2_div,.dress3_div,.dress4_div {
             display: flex;
             flex-direction: column;
-            border: 2px solid white;
             width: 20%;
             height: 60vh;
         }
@@ -81,7 +86,31 @@
             background-color: white;
             color: rgb(6, 117, 117);
         }
-        
+        .addToBag_div {
+            
+            color: white;
+            
+        }
+        .addToBag_div p {
+            padding-left: 40%;
+            margin-top: 5%;
+            display: block;
+            margin-bottom: 10%;
+            font-size: x-large;
+        }
+        .addToBag_div a {
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 2% 10%;
+            margin-left: 25%;
+            background-color: black;
+            color: white;
+        }
+        .addToBag_div a:hover {
+            background-color: white;
+            color: rgb(6, 117, 117);
+            border-color: rgb(6, 117, 117);
+        }
     </style>
 </head>
 
@@ -100,26 +129,38 @@
     <div class="dress_div">
         <div class="dress1_div">
             <img src="img/tshirt.webp" alt="">
-            <div>
-
+            <div class="addToBag_div">
+                <p>$ 20.0</p>
+                <div>
+                    <a href="">ADD TO BAG</a>
+                </div>
             </div>
         </div>
         <div class="dress2_div">
-            <img src="img/pant.jpg" alt="" >
-            <div>
-
+            <img src="img/pant.jpg" alt="" width="100%" height="10vh">
+            <div class="addToBag_div">
+                <p>$ 30.0</p>
+                <div>
+                    <a href="">ADD TO BAG</a>
+                </div>
             </div>
         </div>
         <div class="dress3_div">
             <img src="img/shirt.webp" alt="">
-            <div>
-
+            <div class="addToBag_div">
+                <p>$ 50.0</p>
+                <div>
+                    <a href="">ADD TO BAG</a>
+                </div>
             </div>
         </div>
         <div class="dress4_div">
             <img src="img/top.jpg" alt="">
-            <div>
-
+            <div class="addToBag_div">
+               <p>$ 10.0</p>
+                <div>
+                    <a href="">ADD TO BAG</a>
+                </div>
             </div>
         </div>
     </div>

@@ -6,9 +6,9 @@ app.get('/home', (req, res) => {
    
     res.sendFile(path.join(__dirname, 'home.html'));
 });
-app.get('/admin', (req, res) => {
+app.get('/product', (req, res) => {
  
-    res.sendFile(path.join(__dirname, 'admin.html'));
+    res.sendFile(path.join(__dirname, 'product.html'));
 });
 app.get('/login', (req, res) => {
 

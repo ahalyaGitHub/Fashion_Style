@@ -7,12 +7,14 @@
     <title>Login/SignUp Page</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
         * {
             margin: 0;
             padding: 0;
         }
+
         body {
-            background-image: url('img/login_img.jpg');
+            background-image: url('img/login.avif');
             background-size: cover;
             font-family: "Raleway", sans-serif;
         }
@@ -59,12 +61,36 @@
             margin-left: 15%;
             margin-top: 1%;
         }
-
-        .loginForm {
-            border: 1px solid black;
-            width: 50%;
-            height: 100vh;
+        .login_div {
+            margin-left: 10%;
+            margin-top: 8%;
+           
+            width: fit-content;
+            padding: 3% 3%;
+            background-color: transparent;
+        }
+        b {
+            font-size: xx-large;
+        }
+        span {
+            background-color: white;
+            color: rgb(6, 117, 117);
+        }
+        form {
+            margin-top: 5%;
+            font-weight: bolder;
+            margin-left: 20%;
+        }
+        form input{
+            padding: 3% 10%;
+            border-radius: 8px;
             
+        }
+        form label {
+            font-size: x-large;
+        }
+        .btn {
+            margin-left: 15%;
         }
     </style>
 </head>
@@ -73,18 +99,21 @@
     <nav>
         <ul>
             <p>FASHION STYLE</p>
-            <li><a href="">HOME</a></li>
+            <li><a href="http://localhost:3000/home">HOME</a></li>
         </ul>
     </nav>
-    <form class="loginForm">
+    <div class="login_div">
+        <b>WELCOME TO <span>FASHINE STYLE</span></b>
+        <form>
+            
+            <label for="Email Address">Email Address :</label><br><br>
+            <input type="email" name="Email" id="email" placeholder="Enter email address"><br><br>
+            <label for="Password">Password :</label><br><br>
+            <input type="password" name="Password" id="password" placeholder="Enter password"><br><br>
+            <input type="submit" value="LOGIN" class="btn">
 
-        <label for="Email Address">Email Address</label><br>
-        <input type="email" name="Email" id="email" placeholder="Email Address"><br>
-        <label for="Password">Password</label><br>
-        <input type="password" name="Password" id="password" placeholder="Password"><br>
-        <input type="submit" value="LOGIN" class="btn">
-
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
